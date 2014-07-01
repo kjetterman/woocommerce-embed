@@ -436,14 +436,14 @@ class WC_Embed
         $product_count = count($product_ids);
 
 
-	$view_settings => array(
+	$view_settings = array(
 	    'title'     => filter_input(INPUT_GET, 'wce_show_title'),
 	    'image'     => filter_input(INPUT_GET, 'wce_show_image'),
 	    'price'     => filter_input(INPUT_GET, 'wce_show_price'),
 	    'rating'    => filter_input(INPUT_GET, 'wce_show_rating'),
 	    'desc'      => filter_input(INPUT_GET, 'wce_show_desc'),
 	    'size'      => filter_input(INPUT_GET, 'wce_embed_size'),
-	)
+	);
 	
 
         if ($product_count > 1)
